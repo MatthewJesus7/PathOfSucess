@@ -368,6 +368,17 @@ footer {
     padding: 15px;
 }
 
+.afiliacoes {
+    display: flex;
+}
+
+.afiliacoes-item {
+    margin: 20px;
+    margin-top: 40px;
+    
+    width: 40%;
+}
+
 .footer {
     margin-top: 50px;
     background-color: var(--corEscura);
