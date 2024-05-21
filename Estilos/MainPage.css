@@ -221,7 +221,7 @@ footer {
 
 .features-article mark{
     background-color: white;
-    padding: 0px 1px;
+    padding: auto 1px;
 }
 
 .cta-section {
@@ -282,7 +282,8 @@ footer {
 .carousel-item {
     flex: 0 0 100%;
     width: 250px;
-    height: 300px; /* Defina a altura desejada */
+    height: 400px; /* Defina a altura desejada */
+    border-radius: 10px;
     background-color: #ddd; /* Cor de fundo temporária */
 }
 
@@ -420,6 +421,7 @@ footer {
     width: 200px;
     height: 300px;
     margin: auto;
+    margin-top: 15px;
     border-radius: 10px;
     background-color: gray;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.200);
