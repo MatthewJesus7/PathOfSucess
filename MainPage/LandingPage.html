@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Estilos/MainPage.css">
+    <link rel="stylesheet" href="../Estilos/MainPagePc.css" media="screen and (min-width: 1200px)">
     <title>Landing Page de Alta Conversão</title>
 </head>
 <body>
@@ -27,13 +28,29 @@
                         Descubra o Verdadeiro Caminho para o Sucesso
                     </p>
                 </section>
+
+
                 <section class="title-section-right">
-                    <button class="title-button">
-                        Saiba mais
-                    </button>
+
+                    <a href="">
+                        <button class="title-button">
+                            Saiba mais
+                        </button>
+                    </a>
+
                     <div class="product-image">
-                        <img id="smiling-person" src="../imagens/MainPage/homem-sorridente500px.jpg" alt="Pessoa Sorrindo" class="product-img">
+
+                    <picture>
+
+                        <source media="(max-width: 750px)" srcset="../imagens/MainPage/homem-sorridente500px.jpg" type="image/jpeg">
+                        <source media="(max-width: 1150px)" srcset="../imagens/MainPage/homem-sorridente800px.jpg" type="image/jpeg">
+                        
+                        <img id="smiling-person" src="../imagens/MainPage/homem-sorridente1200px.jpg" alt="Pessoa Sorrindo" class="product-img">
+
+                    </picture>
+
                     </div>
+
                 </section>
             </article>
         </section>

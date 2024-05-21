@@ -26,7 +26,6 @@ h1 {
 }
 
 p {
-    font-size: 20px;
     margin-top: 10px;
 }
 
@@ -66,6 +65,7 @@ section p {
 }
 
 .title-article {
+    padding-top: 0%;
     text-align: left;
 }
 
@@ -117,7 +117,7 @@ footer {
 }
 
 .title-paragraph {
-   font-size: 1.2em;
+   font-size: 2em;
 }
 
 .title-section-right {
