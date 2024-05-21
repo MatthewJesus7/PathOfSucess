@@ -5,22 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Estilos/MainPage.css">
     <link rel="stylesheet" href="../Estilos/MainPagePc.css" media="screen and (min-width: 1200px)">
+
+    <link rel="shortcut icon" href="../imagens/favicons/favicon.ico" type="image/x-icon">
     <title>DML Autodesenvolvimento</title>
 </head>
 <body>
     <header class="header">
         <nav class="navbar">
             <a href="#" class="nav-item">DML</a>
-            <a href="#" class="nav-item">Menu</a>
+            <!-- <a href="#" class="nav-item">Menu</a> -->
         </nav>
     </header>
     
     <main class="main-content">
         <section class="section title-section">
             <article class="title-article">
-
                 <section class="title-section-left">
-
                     <h1 class="title-heading">
                         Autodesenvolvimento
                     </h1>
@@ -29,52 +29,40 @@
                     </p>
                 </section>
 
-
                 <section class="title-section-right">
-
-                    <a href="">
+                    <a href="#">
                         <button class="title-button">
                             Saiba mais
                         </button>
                     </a>
 
-                    <div class="product-image">
-
-                    <picture>
-
-                        <source media="(max-width: 750px)" srcset="../imagens/MainPage/homem-sorridente500px.jpg" type="image/jpeg">
-                        <source media="(max-width: 1150px)" srcset="../imagens/MainPage/homem-sorridente800px.jpg" type="image/jpeg">
-                        
-                        <img id="smiling-person" src="../imagens/MainPage/homem-sorridente1200px.jpg" alt="Pessoa Sorrindo" class="product-img">
-
-                    </picture>
-
+                    <div id="product-image" class="div-image">
+                        <picture>
+                            <source media="(max-width: 750px)" srcset="../imagens/MainPage/homem-sorridente500px.jpg" type="image/jpeg">
+                            <source media="(max-width: 1150px)" srcset="../imagens/MainPage/homem-sorridente800px.jpg" type="image/jpeg">
+                            <img id="smiling-person" src="../imagens/MainPage/homem-sorridente1200px.jpg" alt="Pessoa Sorrindo" class="image">
+                        </picture>
                     </div>
-
                 </section>
             </article>
         </section>
 
         <section id="product-info" class="product-info-section">
-
             <article class="product-info-article">
-
+                <section id="product-info-article-section-left" class="product-info-article-section">
                     <h2 class="product-heading">Qual o Caminho para o Sucesso?</h2>
                     <p class="product-paragraph">
-                        Muitas pessoas acreditam que o sucesso é alcançado por meio de cursos, investimentos ou puro esforço. No entanto, o verdadeiro caminho para o sucesso é o 
-                        <mark><ins><strong>autodesenvolvimento.</strong></ins></mark>
+                        Muitas pessoas acreditam que o sucesso é alcançado por meio de cursos, investimentos ou puro esforço. No entanto, o verdadeiro caminho para o sucesso é 
+                        <mark><ins><strong>Investir em si mesmo.</strong></ins></mark>
                     </p>
                     
                     <button class="product-button">
                         Veja Nossas Ofertas
                     </button>
-
                     <h3 class="subheading">
                         Por Que Escolher o Caminho do Autodesenvolvimento?
                     </h3>
-
                     <ul class="product-list">
-
                         <li class="product-list-item">
                             Para definirmos <mark><ins>nossa própria definição</ins></mark> de sucesso.
                         </li>
@@ -82,34 +70,35 @@
                             Para <mark><ins>disciplinarmo-nos</ins></mark> nesse caminho.
                         </li>
                         <li class="product-list-item">
-                            Para mantermo-nos <mark><ins>consistentes</ins></mark> no sucesso.</li>
+                            Para mantermo-nos <mark><ins>consistentes</ins></mark> no sucesso.
+                        </li>
                     </ul>
+                </section>
 
-                    <!-- <p class="product-price-info">Informe o preço do produto ou qualquer oferta especial disponível.</p> -->
-
+                <section id="product-info-article-section-right" class="product-info-article-section">
+                    <div id="product-info-image" class="div-image">
+                        <img src="../imagens/MainPage/homem-sorridente800px.jpg" alt="Pessoa Sorrindo" class="image">
+                    </div>
+                </section>
             </article>
         </section>
 
         <section id="features" class="features-section">
-
             <article class="features-article">
-
                 <h2 class="features-heading">Recursos Principais</h2>
                 <ul class="features-list">
                     <li class="features-list-item">
                         <h3 class="feature-subheading">Comprometimento</h3>
-                        <p class="feature-paragraph">Comprometemo-nos em oferecer <mark>os melhores produtos</mark> para nossos clientes.</p>
+                        <p class="feature-paragraph">Comprometemo-nos em oferecer <mark><ins>os melhores produtos</ins></mark> para nossos clientes.</p>
                     </li>
                     <li class="features-list-item">
                         <h3 class="feature-subheading">Realização</h3>
-                        <p class="feature-paragraph">Não queremos apenas vender um produto, queremos <mark>
-                            testemunhar um verdadeiro
-                            sucesso</mark> em sua vida!</p>
+                        <p class="feature-paragraph">Não queremos apenas vender um produto, queremos <mark><ins>testemunhar um verdadeiro sucesso</ins></mark> em sua vida!</p>
                     </li>
                     <li class="features-list-item">
                         <h3 class="feature-subheading">Sucesso Garantido</h3>
                         <p class="feature-paragraph">
-                            Buscamos garantir que sua jornada de autodesenvolvimento seja uma experiência de sucesso.
+                            <mark><ins>Buscamos garanti</ins>r</mark> que sua jornada de autodesenvolvimento seja uma experiência de sucesso.
                         </p>
                     </li>
                 </ul>
@@ -117,30 +106,74 @@
         </section>
         
         <section id="cta" class="cta-section">
-
             <article class="cta-article">
-
                 <h2 class="cta-heading">
                     Pronto para Transformar Sua Vida <mark class="cta-highlight">Agora?</mark>
                 </h2>
+                <div class="carousel-container">
 
-                <div class="cta-content">
+                    <div class="carousel">
 
-                    <div class="cta-carrinho">
-
+                        <div class="carousel-item">
+                            <!-- <a href="">
+                                <img src="" alt="">
+                                <h4></h4>
+                                <p></p>
+                            </a> -->
+                            <div class="box"></div>
+                        </div>
+                        <div class="carousel-item">
+                            <!-- <a href="">
+                                <img src="" alt="">
+                                <h4></h4>
+                                <p></p>
+                            </a> -->
+                            <div class="box"></div>
+                        </div>
+                        <div class="carousel-item">
+                            <!-- <a href="">
+                                <img src="" alt="">
+                                <h4></h4>
+                                <p></p>
+                            </a> -->
+                            <div class="box"></div>
+                        </div>
                     </div>
 
-                    <button class="cta-button">
-                        Comprar Agora
+                    <button class="carousel-button prev">
+                        &lt;
                     </button>
+                    <button class="carousel-button next">
+                        &gt;
+                    </button>
+
+                    <div class="indicator">
+                        <p>Oferta Limitada!</p>
+                    </div>
+
+                    <div class="carousel-indicators">
+
+                        <span class="indicator-dot active" data-index="0"></span>
+
+                        <span class="indicator-dot" data-index="1"></span>
+
+                        <span class="indicator-dot" data-index="2"></span>
+                    </div>
                 </div>
+
+
+                <button class="cta-button">
+                    Comprar Agora
+                </button>
             </article>
         </section>
     </main>
 
     <footer class="footer">
         <article class="footer-article">
-            <p class="footer-text">&copy; 2024 DML. <br> Todos os Direitos Reservados.</p>
+            <p class="footer-text">
+                &copy; 2024 DML. <br> Todos os Direitos Reservados.
+            </p>
         </article>
     </footer>
 

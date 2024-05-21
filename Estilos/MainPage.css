@@ -16,8 +16,7 @@ body {
 }
 
 article, footer {
-    max-width: 1200px;
-    padding: 8%;
+    padding: 4%;
     text-align: center;
 }
 
@@ -73,9 +72,9 @@ section p {
     text-align: left;
 }
 
-.image-placeholder {
-    height: 200px;
-    background-color: rgba(0, 0, 0, 0.1);
+.image {
+    max-width: 80%;
+    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.200);
     margin-top: 20px;
 }
 
@@ -245,15 +244,6 @@ footer {
     /* Estilos para o conteúdo de call-to-action */
 }
 
-.cta-carrinho { 
-    height: 300px;
-    width: 244px;
-    margin: auto;
-    border: 3px solid var(--corEscura);
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
 .cta-button {
     background-color: orange;
     color: white;
@@ -277,6 +267,160 @@ footer {
     /* Estilos para o texto de rodapé */
 }
 
+.carousel-container {
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+    width: 250px;
+    height: 300px; /* Defina a altura desejada */
+    background-color: #ddd; /* Cor de fundo temporária */
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 24px;
+    background-color: white;
+    color: black;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.200);
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.carousel-button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+    background-color: black;
+    color: white;
+}
+
+.prev:hover {
+    background-color: white;
+    color: black;
+}
+
+.next {
+    right: 10px;
+}
+
+.indicator {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    padding: 15px;
+    font-size: 1.2em;
+    rotate: 30deg;
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.indicator-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.indicator-dot.active {
+    background-color:var(--corDestaque);
+}
+
+
+.cta-button {
+    background-color: orange;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.footer {
+    margin-top: 50px;
+    background-color: var(--corEscura);
+    color: white;
+}
+
+.footer-article {
+    /* Estilos para o artigo de rodapé */
+}
+
+.footer-text {
+    /* Estilos para o texto de rodapé */
+}
+
 .main-script {
     /* Estilos para o script principal */
+}
+
+.nav-item:hover,
+.nav-item:focus {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+}
+
+.title-button:hover,
+.title-button:focus {
+    background-color: var(--corDestaque);
+}
+
+.product-button:hover,
+.product-button:focus {
+    background-color: var(--corDestaque);
+}
+
+.cta-button:hover,
+.cta-button:focus {
+    background-color: darkorange;
+}
+
+.features-list-item:hover,
+.features-list-item:focus {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.main-script {
+    /* Estilos para o script principal */
+}
+
+.box {
+    width: 200px;
+    height: 300px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: gray;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.200);
 }
