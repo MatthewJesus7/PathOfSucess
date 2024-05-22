@@ -1,3 +1,45 @@
+let currentSlideIndex = 0;
+
+function showInfo(card) {
+    const info = card.querySelector('.info');
+    info.style.opacity = '1';
+    info.style.backdropFilter = 'blur(5px)';
+}
+
+function hideInfo(card) {
+    const info = card.querySelector('.info');
+    info.style.opacity = '0';
+    info.style.backdropFilter = 'none';
+}
+
+function moveCarousel(direction) {
+    const items = document.querySelectorAll('.carousel-item');
+    currentSlideIndex = (currentSlideIndex + direction + items.length) % items.length;
+    updateCarousel();
+}
+
+function currentSlide(index) {
+    currentSlideIndex = index - 1;
+    updateCarousel();
+}
+
+function updateCarousel() {
+    const carouselInner = document.querySelector('.carousel-post-inner');
+    const dots = document.querySelectorAll('.dot');
+    carouselInner.style.transform = `translateX(-${currentSlideIndex * 100}%)`;
+    
+    dots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === currentSlideIndex);
+    });
+}
+
+// Set the first dot as active initially
+document.addEventListener('DOMContentLoaded', () => {
+    updateCarousel();
+});
+
+// arrumar daqui pra cima
+
 const carousel = document.querySelector('.carousel');
 const prevButton = document.querySelector('.prev');
 const nextButton = document.querySelector('.next');
@@ -18,16 +60,3 @@ prevButton.addEventListener('click', () => {
         updateCarousel();
     }
 });
-
-indicatorDots.forEach(dot => {
-    dot.addEventListener('click', () => {
-        currentIndex = parseInt(dot.getAttribute('data-index'));
-        updateCarousel();
-    });
-});
-
-function updateCarousel() {
-    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
-    indicatorDots.forEach(dot => dot.classList.remove('active'));
-    indicatorDots[currentIndex].classList.add('active');
-}

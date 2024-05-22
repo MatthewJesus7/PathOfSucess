@@ -36,13 +36,52 @@
                         </button>
                     </a>
 
-                    <div id="product-image" class="div-image">
-                        <picture>
-                            <source media="(max-width: 750px)" srcset="../imagens/MainPage/homem-sorridente500px.jpg" type="image/jpeg">
-                            <source media="(max-width: 1150px)" srcset="../imagens/MainPage/homem-sorridente800px.jpg" type="image/jpeg">
-                            <img id="smiling-person" src="../imagens/MainPage/homem-sorridente1200px.jpg" alt="Pessoa Sorrindo" class="image">
-                        </picture>
+                    <!-- arrumar daqui pra baixo -->
+
+                    <div class="carrosel-post-container">
+                        
+                        <div class="carousel-post">
+
+                            <div class="carousel-post-inner">
+
+                                <div class="carousel-item">
+
+                                    <div class="card-post" onclick="showInfo(this)" style="background-image: url(../imagens/MainPage/FrasesDosRico/warrenbuffet/warrenbuffet720px.png);">
+
+                                        <div class="info">
+                                            <p>Informações sobre a pessoa do cartão 1.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+
+                                    <div class="card-post" onclick="showInfo(this)" 
+                                    style="background-image: url();">
+
+                                        <div class="info">
+                                            <p>Informações sobre a pessoa do cartão 2.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Adicione mais itens de carrossel conforme necessário -->
+                            </div>
+
+                            <button class="carousel-post-control prev" onclick="moveCarousel(-1)">
+                                &#10094;
+                            </button>
+                            <button class="carousel-post-control next" onclick="moveCarousel(1)">
+                                &#10095;
+                            </button>
+
+                            <div class="carousel-post-dots">
+                                <span class="dot" onclick="currentSlide(1)"></span>
+                                <span class="dot" onclick="currentSlide(2)"></span>
+                                <!-- Adicione mais pontos conforme necessário -->
+                            </div>
+                        </div>
                     </div>
+                    <!-- arrumar daqui pra cima -->
                 </section>
             </article>
         </section>
@@ -143,10 +182,10 @@
                         </div>
                     </div>
 
-                    <button class="carousel-button prev">
+                    <button class="carousel-button prev" onclick="moveCarousel(-1)">
                         &lt;
                     </button>
-                    <button class="carousel-button next">
+                    <button class="carousel-button next" onclick="moveCarousel(1)">
                         &gt;
                     </button>
 
@@ -157,9 +196,7 @@
                     <div class="carousel-indicators">
 
                         <span class="indicator-dot active" data-index="0"></span>
-
                         <span class="indicator-dot" data-index="1"></span>
-
                         <span class="indicator-dot" data-index="2"></span>
                     </div>
                 </div>
