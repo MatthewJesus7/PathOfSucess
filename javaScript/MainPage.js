@@ -1,37 +1,49 @@
-let currentSlideIndex = 0;
+// Guarda os índices dos slides atuais para cada carrossel
+let currentSlideIndices = {
+    carousel1: 0,
+    carousel2: 0
+};
 
-function showInfo(card) {
-    const info = card.querySelector('.info');
-    info.style.opacity = '1';
-    info.style.backdropFilter = 'blur(5px)';
-}
+// Função para atualizar o carrossel
+function updateCarousel(carouselId) {
+    const carouselInner = document.querySelector(`#${carouselId} .carousel-inner`);
+    const dots = document.querySelectorAll(`#${carouselId} .dot`);
+    const currentIndex = currentSlideIndices[carouselId];
 
-function hideInfo(card) {
-    const info = card.querySelector('.info');
-    info.style.opacity = '0';
-    info.style.backdropFilter = 'none';
-}
+    // Atualiza a posição do carrossel
+    carouselInner.style.transform = `translateX(-${currentIndex * 100}%)`;
 
-function moveCarousel(direction) {
-    const items = document.querySelectorAll('.carousel-item');
-    currentSlideIndex = (currentSlideIndex + direction + items.length) % items.length;
-    updateCarousel();
-}
-
-function currentSlide(index) {
-    currentSlideIndex = index - 1;
-    updateCarousel();
-}
-
-function updateCarousel(carouselSelector, dotsSelector, currentSlideIndex) {
-    const carouselInner = document.querySelector(carouselSelector);
-    const dots = document.querySelectorAll(dotsSelector);
-    carouselInner.style.transform = `translateX(-${currentSlideIndex * 100}%)`;
-    
+    // Atualiza os indicadores de pontos
     dots.forEach((dot, index) => {
-        dot.classList.toggle('active', index === currentSlideIndex);
+        dot.classList.toggle('active', index === currentIndex);
     });
 }
 
-UpdateCarousel('.carousel-post', '.dot-post', 1);
-UpdateCarousel('.carousel-item', '.indicator-dot', 1);
+// Função para mover o carrossel para um slide específico
+function currentSlide(index, carouselId) {
+    currentSlideIndices[carouselId] = index;
+    updateCarousel(carouselId);
+}
+
+// Função para mover o carrossel para frente ou para trás
+function moveCarousel(direction, carouselId) {
+    const items = document.querySelectorAll(`#${carouselId} .carousel-item`);
+    currentSlideIndices[carouselId] = (currentSlideIndices[carouselId] + direction + items.length) % items.length;
+    updateCarousel(carouselId);
+}
+
+// Inicializa os carrosseis no slide 0
+updateCarousel('carousel1');
+updateCarousel('carousel2');
+
+
+
+
+/*
+currentSlideIndices: Um objeto para armazenar os índices dos slides atuais para cada carrossel.
+updateCarousel: Atualiza a posição do carrossel e os indicadores de pontos com base no índice atual.
+currentSlide: Move o carrossel para um slide específico.
+moveCarousel: Move o carrossel para frente ou para trás, ajustando o índice do slide atual e chamando updateCarousel.
+Inicializa ambos os carrosseis no slide 0 chamando updateCarousel para cada carrossel.
+Essa lógica permite que você controle dois carrosseis de forma independente, garantindo que cada carrossel funcione corretamente com seus próprios indicadores de pontos e itens.
+*/

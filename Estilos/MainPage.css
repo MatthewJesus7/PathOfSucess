@@ -144,6 +144,7 @@ section h2 {
 .carousel-item {
     min-width: 100%;
     box-sizing: border-box;
+    
 }
 
 .card-post {
@@ -153,8 +154,12 @@ section h2 {
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
+    background-color: darkgray;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .card:hover .info, .card:active .info {
