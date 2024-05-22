@@ -34,25 +34,9 @@ section p {
     background-color: var(--corDestaque);
 }
 
-.header {
-    /* Estilos para o cabeçalho */
-}
-
-.main-content {
-    /* Estilos para o conteúdo principal */
-}
-
-.title-section {
-    /* Estilos para a seção de título */
-}
-
 .title-article {
     display: flex;
     flex-direction: column;
-}
-
-.title-heading {
-    /* Estilos para o cabeçalho de título */
 }
 
 .title-paragraph {
@@ -83,26 +67,15 @@ section p {
     box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.200);
 }
 
-.product-info-section {
-    
-}
-
 .product-info-article {
     display: flex;
     text-align: left;
-}
-
-.product-info-article-section {
-
 }
 
 #product-info-article-section-left {
     margin-right: 30px;
 }
 
-#product-info-article-section-right {
-
-}
 
 .product-heading {
     font-size: 1.6em;
@@ -130,10 +103,6 @@ section p {
     margin: 15px 0px;
 }
 
-.product-price-info {
-    /* Estilos para as informações de preço do produto */
-}
-
 #product-info-image {
     text-align: right;
     width: 700px;
@@ -149,16 +118,12 @@ section p {
     margin-bottom: 30px;
 }
 
-.features-section {
-    
-}
-
 .features-article {
     color: white;
 }
 
 .features-heading {
-    font-size: 2em;
+    font-size: 2.3em;
 }
 
 .features-list {
@@ -171,25 +136,17 @@ section p {
 }
 
 .feature-subheading {
-    /* Estilos para os subcabeçalhos de recurso */
-}
-
-.feature-paragraph {
-    /* Estilos para os parágrafos de recurso */
-}
-
-.cta-heading {
-    /* Estilos para o cabeçalho de call-to-action */
-}
-
-.cta-highlight {
-    /* Estilos para o destaque de call-to-action */
-}
-
-.cta-content {
-    /* Estilos para o conteúdo de call-to-action */
+    font-size: 1.5em;
 }
 
 .indicator {
+    margin: 0px;
     font-size: 1.2em;
+    padding: 30px;
+}
+
+.indicator p {
+    position: absolute;
+    top: 10px;
+    left: 0px;
 }
