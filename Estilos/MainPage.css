@@ -120,7 +120,6 @@ section h2 {
 /* arrumar daqui pra baixo */
 
 .carrosel-post-container {
-    background-color: #f4f4f4;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,13 +152,13 @@ section h2 {
     overflow: hidden;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
-    width: 100%;
-    height: 100%;
+    width: 900px;
+    height: 450px;
     display: block;
     background-color: darkgray;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 .card:hover .info, .card:active .info {
@@ -183,16 +182,9 @@ section h2 {
     transition: opacity 0.3s ease-in-out;
 }
 
-.carousel-control {
+.carousel-button {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
-    z-index: 10;
+    top: 50;
 }
 
 .carousel-post.prev {
@@ -351,97 +343,6 @@ section h2 {
 .cta-content {
     /* Estilos para o conteúdo de call-to-action */
 }
-
-.carousel-container {
-    position: relative;
-    width: 100%;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.carousel {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
-.carousel-item {
-    flex: 0 0 100%;
-    width: 250px;
-    height: 400px; /* Defina a altura desejada */
-    border-radius: 10px;
-    background-color: #ddd; /* Cor de fundo temporária */
-}
-
-.carousel-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    border: none;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    font-size: 24px;
-    background-color: white;
-    color: black;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.200);
-    cursor: pointer;
-    transition: all .3s;
-}
-
-.carousel-button:hover {
-    background-color: black;
-    color: white;
-    cursor: pointer;
-}
-
-.prev {
-    left: 10px;
-    background-color: black;
-    color: white;
-}
-
-.prev:hover {
-    background-color: white;
-    color: black;
-}
-
-.next {
-    right: 10px;
-}
-
-.indicator {
-    position: absolute;
-    top: -20px;
-    right: -20px;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: red;
-    color: white;
-    padding: 15px;
-    font-size: 1.2em;
-    rotate: 30deg;
-}
-
-.carousel-indicators {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.indicator-dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #ccc;
-    margin: 0 5px;
-    cursor: pointer;
-}
-
-.indicator-dot.active {
-    background-color:var(--corDestaque);
-}
-
 
 .cta-button {
     background-color: orange;

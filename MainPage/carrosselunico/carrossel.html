@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Carrossel</title>
+</head>
+<body>
+
+    <div class="carousel-post-container">
+        <div class="carousel-post">
+            <div class="carousel-post-inner">
+                <div class="carousel-item">
+    
+                    <div class="card-post" onclick="showInfo(this)" style="background-image: url(../../imagens/MainPage/FrasesDosRico/warrenbuffet/warrenbuffet720px.png);">
+                        <div class="info">
+                            <p>Informações sobre a pessoa do cartão 1.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="carousel-post-item">
+    
+                    <div class="card-post" onclick="showInfo(this)" 
+                    style="background-image: url(../../imagens/MainPage/FrasesDosRico/oprahwinfrey/oprahwinfrey720px.png);">
+    
+                        <div class="info">
+                            <p>Informações sobre a pessoa do cartão 2.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-post-item">
+    
+                    <div class="card-post" onclick="showInfo(this)" 
+                    style="background-image: url(../../imagens/MainPage/FrasesDosRico/sherylsandberg/sherylsandberg720px.png);">
+    
+                        <div class="info">
+                            <p>Informações sobre a pessoa do cartão 2.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-post-item">
+    
+                    <div class="card-post" onclick="showInfo(this)" 
+                    style="background-image: url(../../imagens/MainPage/FrasesDosRico/tonyrobbins/tonyrobbins720px.png);">
+    
+                        <div class="info">
+                            <p>Informações sobre a pessoa do cartão 2.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-post-item">
+    
+                    <div class="card-post" onclick="showInfo(this)" 
+                    style="background-image: url(../../imagens/MainPage/FrasesDosRico/jimrohn/jimrohn720px.png);">
+    
+                        <div class="info">
+                            <p>Informações sobre a pessoa do cartão 2.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+    
+            <button class="carousel-button prev">
+                &#10094;
+            </button>
+            <button class="carousel-button next">
+                &#10095;
+            </button>
+    
+            <div class="carousel-post-dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <!-- Adicione mais pontos conforme necessário -->
+            </div>
+        </div>
+    </div>
+
+    <script src="carrossel.js" class="main-script"></script>
+</body>
+</html>

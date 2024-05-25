@@ -43,8 +43,7 @@
                             <div class="carousel-post-inner">
                                 <div class="carousel-item">
 
-                                    <div class="card-post" onclick="showInfo(this)" style="background-image: url(../imagens/MainPage/FrasesDosRico/warrenbuffet/warrenbuffet720px.png);">
-
+                                    <div class="card-post" onmouseover="darkenBackground(this)" onmouseout="lightenBackground(this)" style="background-image: url(../imagens/MainPage/FrasesDosRico/warrenbuffet/warrenbuffet720px.png);">
                                         <div class="info">
                                             <p>Informações sobre a pessoa do cartão 1.</p>
                                         </div>
@@ -54,7 +53,7 @@
                                 <div class="carousel-post-item">
 
                                     <div class="card-post" onclick="showInfo(this)" 
-                                    style="background-image: url(../);">
+                                    style="background-image: url(../imagens/MainPage/FrasesDosRico/oprahwinfrey/oprahwinfrey720px.png);">
 
                                         <div class="info">
                                             <p>Informações sobre a pessoa do cartão 2.</p>
@@ -64,7 +63,7 @@
                                 <div class="carousel-post-item">
 
                                     <div class="card-post" onclick="showInfo(this)" 
-                                    style="background-image: url(../);">
+                                    style="background-image: url(../imagens/MainPage/FrasesDosRico/sherylsandberg/sherylsandberg720px.png);">
 
                                         <div class="info">
                                             <p>Informações sobre a pessoa do cartão 2.</p>
@@ -74,7 +73,7 @@
                                 <div class="carousel-post-item">
 
                                     <div class="card-post" onclick="showInfo(this)" 
-                                    style="background-image: url(../);">
+                                    style="background-image: url(../imagens/MainPage/FrasesDosRico/tonyrobbins/tonyrobbins720px.png);">
 
                                         <div class="info">
                                             <p>Informações sobre a pessoa do cartão 2.</p>
@@ -84,7 +83,7 @@
                                 <div class="carousel-post-item">
 
                                     <div class="card-post" onclick="showInfo(this)" 
-                                    style="background-image: url(../);">
+                                    style="background-image: url(../imagens/MainPage/FrasesDosRico/jimrohn/jimrohn720px.png);">
 
                                         <div class="info">
                                             <p>Informações sobre a pessoa do cartão 2.</p>
@@ -94,16 +93,19 @@
                                 
                             </div>
 
-                            <button class="carousel-post-button prev" onclick="moveCarousel(-1)">
+                            <button class="carousel-button prev" onclick="moveCarousel(-1)">
                                 &#10094;
                             </button>
-                            <button class="carousel-post-button next" onclick="moveCarousel(1)">
+                            <button class="carousel-button next" onclick="moveCarousel(1)">
                                 &#10095;
                             </button>
 
                             <div class="carousel-post-dots">
                                 <span class="dot" onclick="currentSlide(1)"></span>
                                 <span class="dot" onclick="currentSlide(2)"></span>
+                                <span class="dot" onclick="currentSlide(3)"></span>
+                                <span class="dot" onclick="currentSlide(4)"></span>
+                                <span class="dot" onclick="currentSlide(5)"></span>
                                 <!-- Adicione mais pontos conforme necessário -->
                             </div>
                         </div>
@@ -174,55 +176,9 @@
                 <h2 class="cta-heading">
                     Pronto para Transformar Sua Vida <mark class="cta-highlight">Agora?</mark>
                 </h2>
-                <div class="carousel-container">
 
-                    <div class="carousel">
-
-                        <div class="carousel-item">
-                            <!-- <a href="">
-                                <img src="" alt="">
-                                <h4></h4>
-                                <p></p>
-                            </a> -->
-                            <div class="box"></div>
-                            <p>...</p>
-                        </div>
-                        <div class="carousel-item">
-                            <!-- <a href="">
-                                <img src="" alt="">
-                                <h4></h4>
-                                <p></p>
-                            </a> -->
-                            <div class="box"></div>
-                            <p>...</p>
-                        </div>
-                        <div class="carousel-item">
-                            <!-- <a href="">
-                                <img src="" alt="">
-                                <h4></h4>
-                                <p></p>
-                            </a> -->
-                            <div class="box"></div>
-                            <p>...</p>
-                        </div>
-                    </div>
-
-                    <button class="carousel-button prev" onclick="moveCarousel(-1)">
-                        &lt;
-                    </button>
-                    <button class="carousel-button next" onclick="moveCarousel(1)">
-                        &gt;
-                    </button>
-
-                    <div class="indicator">
-                        <p>Oferta Limitada!</p>
-                    </div>
-
-                    <div class="carousel-indicators">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
-                    </div>
+                <div>
+                    <div class="box"></div>
                 </div>
 
 
