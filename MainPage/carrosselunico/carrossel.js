@@ -82,29 +82,32 @@ document.addEventListener('DOMContentLoaded', function() {
   
     setPositionByIndex(); // Inicializa a posição do carrossel corretamente
 
-    function updateCarousel() {
-      slidesContainer.style.transform = `translateX({-index do carrossel numero * tamanho}px)`;
-    }
+    const prevButton = document.querySelector('.prev')
+    const nextButton = document.querySelector('.next')
   
     function nextSlide() {
-      carouselId++;
-      if (carouselId > slides.length) {
-        carouselId = 0;
-      }
-      updateCarousel();
+        currentIndex++;
+        if (currentIndex > slides.length) {
+          currentIndex = 0;
+        }
+        setPositionByIndex();
     }
+      
   
     function prevSlide() {
-      carouselId--;
-      if (carouselId < 0) {
-        carouselId = slides.length - 1;
-      }
-      updateCarousel();
+        currentIndex--;
+        if (currentIndex < 0) {
+          currentIndex = slides.length - 1;
+        }
+        setPositionByIndex();
     }
+      
   
     prevButton.addEventListener('click', prevSlide);
     nextButton.addEventListener('click', nextSlide);
   
-    updateCarousel(); // Exibe o slide inicial
+    setPositionByIndex(); // Exibe o slide inicial
+
+    setInterval(nextSlide, 5000)
   });
   
