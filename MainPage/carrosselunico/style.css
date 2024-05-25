@@ -1,5 +1,4 @@
 .carrosel-post-container {
-    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,7 +29,7 @@
     background-color: white;
 } 
 
-   .card-post {
+.card-post {
     display: block;
     position: relative;
     border-radius: 8px;
@@ -38,32 +37,44 @@
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
     width: 300px;
-    height: 290px;
+    height: 180px;
     background-color: white;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
 }
 
-.card:hover .info, .card:active .info {
-    opacity: 1;
-    backdrop-filter: blur(5px);
-}
+/* .card-show-info {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+} */
 
 .info {
     position: absolute;
-    top: 0;
+    top: 37.5%;
     left: 0;
-    width: 100%;
+    width: 90%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    color: #fff;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    align-items: baseline;
+    justify-content: left;
+    text-align: left;
     opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity .5s ease-in-out;
+    font-size: 1.2em;
+}
+
+.show-info {
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.50);
+    color: black;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
 }
 
 .carousel-button {
@@ -89,29 +100,17 @@
     right: 0;
 } */
 
-/*
-.carousel-dots {
+
+.carousel-post-dots {
     text-align: center;
     padding: 1rem 0;
-    background: #f4f4f4;
 }
 
-.carousel-dots .dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 5px;
-    background-color: #bbb;
+.carousel-post-dots .dot {
+    height: 7px;
+    width: 7px;
+    margin: 0px;
+    background-color: #000000;
     border-radius: 50%;
     display: inline-block;
-    cursor: pointer;
 }
-
-.carousel-dots .dot.active {
-    background-color: #717171;
-}
-
-.box {
-    height: 100px;
-    width: 100px;
-    color: red;
-} */

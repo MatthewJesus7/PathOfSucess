@@ -1,7 +1,23 @@
 document.addEventListener('DOMContentLoaded', function() {
     const slidesContainer = document.querySelector('.carousel-post-inner');
     const slides = document.querySelectorAll('.carousel-post-item');
-  
+    const dots = document.querySelectorAll('.dot');
+    const cardPosts = document.querySelectorAll('.card-post');
+
+    function showInfo(event) {
+        const cardPost = event.currentTarget;
+        const info = cardPost.querySelector('.info');
+        info.classList.add('show-info');
+        // some após 5 segundos
+        setTimeout(function() {
+            info.classList.remove('show-info');
+        }, 5000);
+    }
+    cardPosts.forEach(function(cardPost) {
+        cardPost.addEventListener('click', showInfo);
+    });
+
+
     let isDragging = false;
     let startPos = 0;
     let currentTranslate = 0;
@@ -42,8 +58,6 @@ document.addEventListener('DOMContentLoaded', function() {
       if (movedBy < -slideWidth / 4 && currentIndex < slides.length) {
         currentIndex += 1;
       }
-
-    
   
       if (movedBy > slideWidth / 4 && currentIndex > 0) {
         currentIndex -= 1;
@@ -71,6 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
     function setSliderPosition() {
       slidesContainer.style.transform = `translateX(${currentTranslate}px)`;
+      activateDot(currentIndex);
     }
   
     function setPositionByIndex() {
@@ -108,6 +123,21 @@ document.addEventListener('DOMContentLoaded', function() {
   
     setPositionByIndex(); // Exibe o slide inicial
 
+    // Função de mover os slides automaticamente
+
     setInterval(nextSlide, 5000)
-  });
+
+    // Funcão de ativar os pontos de acordo com o slide atual
+
+
+    function activateDot(currentIndex) {
+        dots.forEach((dot, index) => {
+        if (index === currentIndex) {
+            dot.style.background = 'cyan';
+        } else {
+            dot.style.background = 'gray';
+        }
+        });
+    }
+});
   
