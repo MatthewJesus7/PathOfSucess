@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const movedBy = currentTranslate - prevTranslate;
       const slideWidth = getSlideWidth();
   
-      if (movedBy < -slideWidth / 4 && currentIndex < slides.length) {
+      if (movedBy < -slideWidth / 4 && currentIndex < slides.length -1) {
         currentIndex += 1;
       }
   
@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
     function nextSlide() {
         currentIndex++;
-        if (currentIndex > slides.length) {
+        if (currentIndex >= slides.length) {
           currentIndex = 0;
         }
         setPositionByIndex();

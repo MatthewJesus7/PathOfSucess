@@ -1,3 +1,8 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 .carrosel-post-container {
     display: flex;
     justify-content: center;
@@ -44,14 +49,6 @@
     background-size: contain;
 }
 
-/* .card-show-info {
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-} */
-
 .info {
     position: absolute;
     top: 37.5%;
@@ -78,28 +75,8 @@
 }
 
 .carousel-button {
-    /* display: none; */
-    /* position: absolute;
-    top: 50%;
-    background-color: rgba(0, 0, 0, 0.200);
-    color: white;
-    border: none;
-    border-radius: 50%;
-    font-size: 2em;
-    height: 50px;
-    width: 50px;
-    margin: 0px 10px;
-    transform: translate(0, -50%); */
+    display: none;
 }
-/* 
-.carousel-post .prev {
-    left: 0;
-}
-
-.carousel-post .next {
-    right: 0;
-} */
-
 
 .carousel-post-dots {
     text-align: center;
@@ -110,7 +87,168 @@
     height: 7px;
     width: 7px;
     margin: 0px;
-    background-color: #000000;
+    background-color: gray;
     border-radius: 50%;
     display: inline-block;
+}
+
+.carousel-post-dots .dot .active {
+    background-color: cyan;
+    height: 100px;
+}
+
+/* Para dispositivos médios (tablets, entre 576px e 767.98px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .carousel-post {
+        max-width: 400px;
+    }
+
+    .card-post {
+        width: 400px;
+        height: 240px;
+    }
+
+    .info {
+        font-size: 1.1em;
+    }
+
+    .carousel-button {
+        display: block;
+        position: absolute;
+        top: 50%;
+        background-color: rgba(0, 0, 0, 0.200);
+        color: white;
+        border: none;
+        border-radius: 50%;
+        font-size: 2em;
+        height: 50px;
+        width: 50px;
+        margin: 0px 10px;
+        transform: translate(0, -100%);
+        }
+        
+        .carousel-post .prev {
+            left: 0;
+        }
+    
+        .carousel-post .next {
+            right: 0;
+        }
+}
+
+/* Para dispositivos grandes (desktops, entre 768px e 991.98px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .carousel-post {
+        max-width: 500px;
+    }
+
+    .card-post {
+        width: 500px;
+        height: 300px;
+    }
+
+    .info {
+        font-size: 1.2em;
+    }
+
+    .carousel-button {
+        display: block;
+        position: absolute;
+        top: 50%;
+        background-color: rgba(0, 0, 0, 0.200);
+        color: white;
+        border: none;
+        border-radius: 50%;
+        font-size: 2em;
+        height: 50px;
+        width: 50px;
+        margin: 0px 10px;
+        transform: translate(0, -100%);
+        }
+        
+        .carousel-post .prev {
+            left: 0;
+        }
+    
+        .carousel-post .next {
+            right: 0;
+        }
+}
+
+/* Para dispositivos extra grandes (monitores grandes, entre 992px e 1199.98px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .carousel-post {
+        max-width: 600px;
+    }
+
+    .card-post {
+        width: 600px;
+        height: 360px;
+    }
+
+    .info {
+        font-size: 1.3em;
+    }
+
+    .carousel-button {
+        display: block;
+        position: absolute;
+        top: 50%;
+        background-color: rgba(0, 0, 0, 0.200);
+        color: white;
+        border: none;
+        border-radius: 50%;
+        font-size: 2em;
+        height: 50px;
+        width: 50px;
+        margin: 0px 10px;
+        transform: translate(0, -100%);
+        }
+        
+        .carousel-post .prev {
+            left: 0;
+        }
+    
+        .carousel-post .next {
+            right: 0;
+        }
+}
+
+/* Para dispositivos ultra grandes (monitores muito grandes, 1200px ou mais) */
+@media (min-width: 1200px) {
+    .carousel-post {
+        max-width: 800px;
+    }
+
+    .card-post {
+        width: 800px;
+        height: 480px;
+    }
+
+    .info {
+        font-size: 1.5em;
+    }
+
+    .carousel-button {
+        display: block;
+        position: absolute;
+        top: 50%;
+        background-color: rgba(0, 0, 0, 0.200);
+        color: white;
+        border: none;
+        border-radius: 50%;
+        font-size: 2em;
+        height: 50px;
+        width: 50px;
+        margin: 0px 10px;
+        transform: translate(0, -100%);
+        }
+        
+        .carousel-post .prev {
+            left: 0;
+        }
+    
+        .carousel-post .next {
+            right: 0;
+        }
 }
