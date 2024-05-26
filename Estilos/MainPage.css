@@ -17,10 +17,21 @@ body {
     font-family: Arial, sans-serif;
 }
 
-article, footer {
+article,
+footer {
     padding: 4%;
     text-align: center;
 }
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+li {
+    list-style: none;
+}
+
 
 p {
     font-size: 1em;
@@ -28,9 +39,6 @@ p {
     line-height: 1.6;
 }
 
-li {
-    list-style: none;
-}
 
 .image {
     max-width: 80%;
@@ -42,14 +50,12 @@ li {
     margin-bottom: 40px;
 }
 
-section h2 {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-}
+
 
 /* Titulo */
 
-.title-article, .product-details {
+.title-article,
+ .product-details {
     text-align: left;
 }
 
@@ -175,7 +181,7 @@ section h2 {
     text-align: left;
     opacity: 0;
     transition: opacity .5s ease-in-out;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .show-info {
@@ -222,7 +228,7 @@ section h2 {
     }
 
     .info {
-        font-size: 1.1em;
+        font-size: 1.2em;
     }
 
     .carousel-button {

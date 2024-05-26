@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // some após 5 segundos
         setTimeout(function() {
             info.classList.remove('show-info');
-        }, 5000);
+        }, 8000);
     }
     cardPosts.forEach(function(cardPost) {
         cardPost.addEventListener('click', showInfo);
