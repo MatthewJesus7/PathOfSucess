@@ -92,10 +92,9 @@
     display: inline-block;
 }
 
-.carousel-post-dots .dot .active {
-    background-color: cyan;
-    height: 100px;
-}
+/* .carousel-post-dots .dot .active {
+    
+} */
 
 /* Para dispositivos médios (tablets, entre 576px e 767.98px) */
 @media (min-width: 576px) and (max-width: 767.98px) {
