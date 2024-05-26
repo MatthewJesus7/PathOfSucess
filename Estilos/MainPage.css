@@ -238,6 +238,13 @@ section h2 {
         width: 50px;
         margin: 0px 10px;
         transform: translate(0, -100%);
+        transition: all .4s;
+        }
+
+        .carousel-button:hover
+        .carousel-button:focus {
+            background-color: white;
+            color: black;
         }
         
         .carousel-post .prev {
@@ -278,6 +285,12 @@ section h2 {
         margin: 0px 10px;
         transform: translate(0, -100%);
         }
+
+        .carousel-button:hover
+        .carousel-button:focus {
+            background-color: white;
+            color: black;
+        }
         
         .carousel-post .prev {
             left: 0;
@@ -317,6 +330,12 @@ section h2 {
         margin: 0px 10px;
         transform: translate(0, -100%);
         }
+
+        .carousel-button:hover
+        .carousel-button:focus {
+            background-color: white;
+            color: black;
+        }
         
         .carousel-post .prev {
             left: 0;
@@ -355,6 +374,11 @@ section h2 {
         width: 50px;
         margin: 0px 10px;
         transform: translate(0, -100%);
+        }
+
+        .carousel-button:hover {
+            background-color: white;
+            color: black;
         }
         
         .carousel-post .prev {
