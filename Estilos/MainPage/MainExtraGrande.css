@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+.carousel-post {
+    max-width: 600px;
+}
+
+.card-post {
+    width: 600px;
+    height: 360px;
+}
+
+.info {
+    font-size: 1.3em;
+}
+
+.carousel-button {
+    display: block;
+}

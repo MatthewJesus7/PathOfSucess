@@ -1,0 +1,364 @@
+@charset "utf-8";
+
+/* geral */
+
+:root {
+    --corBranco: #FFFFFF;   
+    --corPreto: #212121;
+     /* para bordas, ícones ou textos menores. */
+    --corDestaqueSuaves: #ADD8E6; 
+    /* para seções de destaque ou fundos de caixas de informação. */
+    --corDestaqueEscuro: #0D47A1;
+    /* para garantir legibilidade e impacto. */
+    --corDestaqueEscuro2: #3c7ad8;
+    /* para garantir legibilidade e impacto. */
+    --corElementosdeDestaque: #FFEB3B;
+    /* para ícones e elementos que precisam de um toque de energia. */
+    --corCTA: #FF9800;
+    --corCTA2: #ff6600;
+    /* para botões e links importantes. */
+    --corSuave: #424242;
+
+    --corSombra: rgba(0, 0, 0, 0.200);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+article {
+    padding: 1% 4%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.3em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+p, 
+.list {
+    font-size: 1.2em;
+    margin: 25px 0px;
+    line-height: 1.6;
+}
+
+li {
+    list-style: none;
+}
+
+section {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+
+
+/* Titulo */
+
+.header {
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0px;
+}
+
+.nav-item {
+    color: var(--corPreta);
+    font-weight: lighter;
+    text-decoration: none;
+    padding: 5px 10px;
+    
+}
+
+.nav-item:hover,
+.nav-item:focus {
+    text-decoration: underline;
+}
+
+.title-section {
+    padding-top: 0px;
+}
+
+.title-article {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-paragraph {
+   font-size: 1.5em;
+   margin: -1% 0 -5% 0;
+}
+
+.title-section-right {
+    text-align: right;
+}
+
+.title-button,
+.product-button {
+    font-size: 1.2em;
+    background-color: var(--corDestaqueEscuro);
+    color: var(--corBranco);
+    border: 1px solid var(--corPreto);
+    border-radius: 50px;
+    padding: 10px 25px;
+    margin-bottom: 25px;
+}
+
+ .title-button:hover,
+.title-button:focus,
+.product-button:hover,
+.product-button:focus {
+    background-color: var(--corDestaqueEscuro2);
+}
+
+/* Carrossel */
+
+.carousel-post-container {
+    display: flex;
+    justify-content: right;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.carousel-post {
+    position: relative;
+    max-width: 300px;
+    overflow: hidden;
+    background-color: white;
+    cursor: grab;
+}
+
+.carousel-post:active {
+    cursor: grabbing;
+}
+
+.carousel-post-inner {
+    display: flex;
+    padding: 5px;
+    transition: transform 0.5s ease;
+
+}
+
+.carousel-item {
+    min-width: 300px;
+    background-color: var(--corBranco);
+    
+} 
+
+.card-post {
+    display: block;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    width: 300px;
+    height: 200px;
+    background-color: var(--corBranco);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-shadow: -3px 3px 3px var(--corSombra);
+}
+
+.info {
+    position: absolute;
+    top: 37.5%;
+    left: 0;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: left;
+    text-align: left;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+    font-size: 1em;
+}
+
+.show-info {
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.50);
+    color: var(--corPreto);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px var(--corSombra);
+    padding: 0 20px;
+}
+
+.carousel-button {
+    display: none;
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.200);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 2em;
+    height: 50px;
+    width: 50px;
+    margin: 0px 10px;
+    transform: translate(0, -100%);
+    transition: all .4s;
+}
+
+.carousel-button:hover {
+    background-color: var(--corBranco);
+    color: var(--corPreto);
+}
+
+.carousel-post .prev {
+    left: 0;
+}
+
+.carousel-post .next {
+    right: 0;
+}
+
+.carousel-post-dots {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.carousel-post-dots .dot {
+    height: 7px;
+    width: 7px;
+    margin: 0px;
+    background-color: var(--corSombra);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* lista sobre auto desenvolvimento */
+
+.product-info-section {
+    background-image: linear-gradient(180deg, var(--corSombra), var(--corBranco));
+    box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.200);
+}
+
+.list-item {
+    margin: 15px 0px;
+}
+
+/* Comprometimentos */
+
+.features-section {
+    background-color: var(--corDestaqueSuaves);
+}
+
+.features-article {
+    color: var(--corPreto);
+}
+
+.features-heading {
+    font-size: 2em;
+}
+
+.features-list-item:hover,
+.features-list-item:focus {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-paragraph {
+    margin-top: -5px;
+}
+
+/* CTA com anúncios */
+
+.cta-section {
+    background-color: var(--corSuave);
+    color: var(--corBranco);
+}
+
+.cta-article {
+    text-align: center;
+}
+.cta-section-inner {
+    background-color: var(--corBranco);
+    border-radius: 12px;
+}
+
+.cta-heading {
+    margin-bottom: 25px;
+}
+
+.cta-highlight {
+    padding: 0px 3px 3px 3.5px;
+    background-color: white;
+    color: var(--corPreto);
+}
+
+.cta-button {
+    background-color: var(--corCTA);
+    color: white;
+    font-size: 1.2em;
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.cta-button:hover,
+.cta-button:focus {
+    background-color: var(--corCTA2);
+}
+
+/* Afiliações */
+
+.afiliacoes {
+    display: flex;
+}
+
+.afiliacoes-item {
+    border-radius: 5px;
+    margin: 25px 10px 0px 10px;
+    width: 100px;
+}
+
+.amazon {
+    border-top: 9px solid white;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+}
+
+.footer {
+    margin-top: 70px;
+    margin-bottom: -100%;
+    background-color: var(--corSuave);
+    color: white;
+}
+
+.footer-article {
+    text-align: center;
+    padding: 0;
+}
+
+
+.main-script {
+    /* Estilos para o script principal */
+}
+
+.box {
+    width: 200px;
+    height: 300px;
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 10px;
+    background-color: gray;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.200);
+}
