@@ -133,9 +133,9 @@ document.addEventListener('DOMContentLoaded', function() {
     function activateDot(currentIndex) {
         dots.forEach((dot, index) => {
         if (index === currentIndex) {
-            dot.style.background = 'cyan';
+            dot.style.background = '#3c7ad8';
         } else {
-            dot.style.background = 'gray';
+            dot.style.background = '#424242';
         }
         });
     }

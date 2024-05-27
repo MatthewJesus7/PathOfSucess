@@ -46,10 +46,15 @@ h2 {
 
 p, 
 .list {
-    font-size: 1.2em;
+    font-size: 1.4em;
     margin: 25px 0px;
     line-height: 1.6;
 }
+
+.list {
+    font-size: 1em;
+}
+
 
 li {
     list-style: none;
@@ -63,10 +68,6 @@ section {
 
 
 /* Titulo */
-
-.header {
-
-}
 
 .navbar {
     display: flex;
@@ -103,6 +104,7 @@ section {
 }
 
 .title-section-right {
+    margin-top: -10px;
     text-align: right;
 }
 
@@ -361,4 +363,171 @@ section {
     border-radius: 10px;
     background-color: gray;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.200);
+}
+
+/* Medias do carrossel */
+
+.carrosel-post-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.carousel-post {
+    position: relative;
+    max-width: 300px;
+    overflow: hidden;
+    background-color: white;
+    cursor: grab;
+}
+
+.carousel-post:active {
+    cursor: grabbing;
+}
+
+.carousel-post-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 300px;
+    background-color: white;
+} 
+
+.card-post {
+    display: block;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    width: 300px;
+    height: 180px;
+    background-color: white;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.info {
+    position: absolute;
+    top: 37.5%;
+    left: 0;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: left;
+    text-align: left;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+    font-size: 1.2em;
+}
+
+.show-info {
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.50);
+    color: black;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+}
+
+.carousel-post-dots {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.carousel-post-dots .dot {
+    height: 7px;
+    width: 7px;
+    margin: 0px;
+    background-color: #000000;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* Estilos para telas pequenas (smartphones em modo retrato, largura mínima de 300px) */
+@media (min-width: 450px) and (max-width: 576px){
+    .carousel-post {
+        max-width: 575px;
+    }
+
+    .card-post {
+        width: 450px;
+        height: 350px;
+    }
+
+    .info {
+        font-size: 1em;
+    }
+}
+
+/* Para dispositivos médios (tablets, entre 576px e 767.98px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .carousel-post {
+        max-width: 400px;
+    }
+
+    .card-post {
+        width: 400px;
+        height: 240px;
+    }
+
+    .info {
+        font-size: 1.1em;
+    }
+}
+
+/* Para dispositivos grandes (desktops, entre 768px e 991.98px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .carousel-post {
+        max-width: 500px;
+    }
+
+    .card-post {
+        width: 500px;
+        height: 300px;
+    }
+
+    .info {
+        font-size: 1.2em;
+    }
+}
+
+/* Para dispositivos extra grandes (monitores grandes, entre 992px e 1199.98px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .carousel-post {
+        max-width: 600px;
+    }
+
+    .card-post {
+        width: 600px;
+        height: 360px;
+    }
+
+    .info {
+        font-size: 1.3em;
+    }
+}
+
+/* Para dispositivos ultra grandes (monitores muito grandes, 1200px ou mais) */
+@media (min-width: 1200px) {
+    .carousel-post {
+        max-width: 800px;
+    }
+
+    .card-post {
+        width: 800px;
+        height: 480px;
+    }
+
+    .info {
+        font-size: 1.5em;
+    }
 }
