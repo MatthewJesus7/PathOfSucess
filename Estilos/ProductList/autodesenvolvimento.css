@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+/* geral */
+
+:root {
+    --corBranco: #FFFFFF;   
+    --corPreto: #212121;
+     /* para bordas, ícones ou textos menores. */
+    --corDestaqueSuaves: #ADD8E6; 
+    /* para seções de destaque ou fundos de caixas de informação. */
+    --corDestaqueEscuro: #0D47A1;
+    /* para garantir legibilidade e impacto. */
+    --corDestaqueEscuro2: #3c7ad8;
+    /* para garantir legibilidade e impacto. */
+    --corElementosdeDestaque: #FFEB3B;
+    /* para ícones e elementos que precisam de um toque de energia. */
+    --corCTA: #FF9800;
+    --corCTA2: #ff6600;
+    /* para botões e links importantes. */
+    --corSuave: #424242;
+
+    --corSombra: rgba(0, 0, 0, 0.200);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 1.7em;
+}
+
+p, 
+.list {
+    font-size: 1.3em;
+    line-height: 1.6;
+}
+
+.list {
+    font-size: 1em;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0px;
+}
+
+.nav-item {
+    color: var(--corPreta);
+    font-weight: lighter;
+    text-decoration: none;
+    padding: 5px 10px;
+    
+}
+
+.nav-item:hover,
+.nav-item:focus {
+    text-decoration: underline;
+}
+
+.title {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.product {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    background-color: var(--corBranco);
+    border: 1px solid black;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.200);
+}
+
+.img-product {
+    background-color: var(--corSuave);
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.desc-product {
+
+}
+
+
+.footer {
+    margin-top: 70px;
+    margin-bottom: -100%;
+    background-color: var(--corSuave);
+    color: white;
+}
+
+.footer-article {
+    text-align: center;
+    padding: 0;
+}
+
+.afiliacoes {
+    display: flex;
+}
+
+.afiliacoes-item {
+    border-radius: 5px;
+    margin: 25px 10px 0px 10px;
+    width: 100px;
+}
+
+.amazon {
+    border-top: 9px solid white;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+}
+.main-script {
+    /* Estilos para o script principal */
+}
+
