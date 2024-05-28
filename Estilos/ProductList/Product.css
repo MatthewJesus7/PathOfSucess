@@ -2,11 +2,26 @@
 
 h2 {
     font-size: 2em;
+    padding-bottom: 20px;
+    color: var(--corBranco);
 }
 
 p {
     font-size: 1.1em;
     margin: 5px 0px;
+}
+
+a {
+    font-size: 1.2em;
+    color: white;
+}
+
+a:hover {
+    color: var(--corDestaqueSuaves);
+}
+
+main {
+    background-color: var(--corSuave);
 }
 
 .main-section {
@@ -17,6 +32,8 @@ p {
 .product {
     display: flex;
     flex-direction: column;
+    background-color: var(--corBranco);
+    border-radius: 8px;
 }
 
 .product-img {

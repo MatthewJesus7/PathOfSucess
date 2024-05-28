@@ -65,7 +65,9 @@ section {
     padding-bottom: 5%;
 }
 
-
+a {
+    text-decoration: none;
+}
 
 /* Titulo */
 
@@ -131,7 +133,7 @@ section {
 
 .footer-article {
     text-align: center;
-    padding: 0;
+    padding: 100px;
 }
 
 
