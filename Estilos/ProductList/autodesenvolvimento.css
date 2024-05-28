@@ -19,7 +19,6 @@
     overflow: hidden;
     background-color: var(--corSuave);
     border-radius: 12px;
-    margin: auto;
 }
 
 .product {
@@ -32,6 +31,10 @@
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.200);
     overflow: hidden;
     font-size: .8em;
+}
+
+.last {
+    border-bottom: 1px solid var(--corSombra);
 }
 
 .img-product {
