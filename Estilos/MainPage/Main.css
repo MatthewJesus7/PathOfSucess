@@ -215,6 +215,36 @@
     color: var(--corPreto);
 }
 
+.preco {
+    padding-top: 20px;
+    color: var(--corSuave);
+}
+
+.custo {
+    font-size: 1.5em;
+    color: var(--corPreto);
+}
+
+.cta-section-inner {
+    padding: 10%;
+}
+
+.cta-section-inner a {
+    color: var(--corPreto);
+}
+
+.box {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: var(--corSombra);
+    box-shadow: 3px 3px 3px var(--corSombra);
+}
+
+.box:hover {
+    box-shadow: 3px 3px 6px var(--corSuave);
+}
+
 /* Medias do carrossel */
 
 /* Estilos para telas pequenas (smartphones em modo retrato, largura mínima de 300px) */

@@ -37,8 +37,12 @@ section {
     font-size: 3em;
  }
 
- .title-section-right {
+.title-section-right {
     margin-top: -85px;
+}
+
+.product-info-section {
+    text-align: center;
 }
 
 .feature-subheading {
