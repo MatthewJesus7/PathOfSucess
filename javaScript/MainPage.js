@@ -123,10 +123,6 @@ document.addEventListener('DOMContentLoaded', function() {
   
     setPositionByIndex(); // Exibe o slide inicial
 
-    // Função de mover os slides automaticamente
-
-    setInterval(nextSlide, 5000)
-
     // Funcão de ativar os pontos de acordo com o slide atual
 
 
